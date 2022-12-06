@@ -27,6 +27,7 @@ Greys: #555
   81.2rem = 1300px
   1rem = 16.01px
   1px = 0.062rem
+  1200px = 76.8rem
 */
 
 * {
@@ -43,7 +44,7 @@ body {
 }
 
 /************************/
-/* GEneral Components */
+/* General Components */
 
 .heading-primary {
   font-size: 3.2rem;
@@ -92,6 +93,29 @@ body {
 .margin-right-sm {
   margin-right: 0.92rem !important;
 }
+
+.container {
+  max-width: 76.8rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 6.14rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /************************/
 
 /************************/
@@ -211,3 +235,18 @@ body {
 }
 
 /************************/
+
+/********************/
+
+/* Ho it works */
+
+.section-how {
+  padding: 6.14rem 0;
+  background-color: orangered;
+}
+
+.section-how div div {
+  padding: 100px;
+  font-size: 50px;
+  background-color: #333;
+}
