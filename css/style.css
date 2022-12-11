@@ -10,7 +10,7 @@ Default 1
 ---- 02 Colors
 
 Primary: #e67e22
-Tints: #fdf2e9
+Tints: #fdf2e9, #fae5d3
 Shades:
 Accents:
 Greys: #555
@@ -46,13 +46,39 @@ body {
 /************************/
 /* General Components */
 
-.heading-primary {
-  font-size: 3.2rem;
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
-  line-height: 1.05;
   letter-spacing: -0.5px;
+}
+
+.heading-primary {
   margin-bottom: 1.9rem;
+  line-height: 1.05;
+  font-size: 3.2rem;
+}
+.heading-secondary {
+font-size: 2.8rem;
+line-height: 1.2;
+margin-bottom: 7.5rem;
+}
+
+.sub-heading {
+display: block;
+font-size: 1rem;
+font-weight: 500;
+color: #cf711f;
+text-transform: uppercase;
+margin-bottom: .8rem;
+letter-spacing: 0.75px;
+}
+
+.heading-tertiary {
+font-size: 1.8rem;
+line-height: 1.2;
+margin-bottom: 2rem;
 }
 
 .btn:link,
@@ -102,8 +128,14 @@ body {
 
 .grid {
   display: grid;
-  gap: 6.14rem;
+  row-gap: 6.14rem;
+  column-gap: 4.14rem;
 }
+
+.grid--center-v {
+  align-items: center;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -115,6 +147,7 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+
 
 /************************/
 
@@ -238,15 +271,59 @@ body {
 
 /********************/
 
-/* Ho it works */
+/* How it works */
 
 .section-how {
   padding: 6.14rem 0;
-  background-color: orangered;
+}
+.step-number {
+  font-size: 5.5rem;
+  font-weight: 600;
+  color: #bbbb;
+  margin-bottom: .5rem;
 }
 
-.section-how div div {
-  padding: 100px;
-  font-size: 50px;
-  background-color: #333;
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+ 
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; */
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+
+}
+
+.step-img-box::after {
+width: 45%;
+padding-bottom: 45%;
+background-color: #fae5d3;
+z-index: -1;
+}
+.step-img {
+width: 35%;
+}
+
+.step-description {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 2.97rem;
+}
+/****************?
