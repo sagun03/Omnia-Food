@@ -60,25 +60,25 @@ body {
   font-size: 3.2rem;
 }
 .heading-secondary {
-font-size: 2.8rem;
-line-height: 1.2;
-margin-bottom: 4.8rem;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
 }
 
 .sub-heading {
-display: block;
-font-size: 1rem;
-font-weight: 500;
-color: #cf711f;
-text-transform: uppercase;
-margin-bottom: .8rem;
-letter-spacing: 0.75px;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.75px;
 }
 
 .heading-tertiary {
-font-size: 1.8rem;
-line-height: 1.2;
-margin-bottom: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
 .btn:link,
@@ -147,7 +147,6 @@ margin-bottom: 2rem;
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-
 
 /************************/
 
@@ -271,25 +270,22 @@ margin-bottom: 2rem;
 
 /********************/
 
-
-
 /* FEATURED IN */
 
 .section-feature {
   padding: 3.2rem 0;
   box-shadow: 3px 3px 30px rgb(0 0 0 / 0.2);
-  margin: 50px 50px 25px
+  margin: 50px 50px 25px;
 }
 
 .heading-featured-in {
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: .75px;
+  letter-spacing: 0.75px;
   font-weight: 500;
   text-align: center;
   margin-bottom: 1.8rem;
-  color:#cf711f;
-  
+  color: #cf711f;
 }
 
 .logos {
@@ -303,7 +299,6 @@ margin-bottom: 2rem;
   opacity: 0.7;
 }
 
-
 /* How it works */
 
 .section-how {
@@ -313,7 +308,7 @@ margin-bottom: 2rem;
   font-size: 5.5rem;
   font-weight: 600;
   color: #bbbb;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .step-img-box {
@@ -323,13 +318,12 @@ margin-bottom: 2rem;
   justify-content: center;
 }
 
-
 .step-img-box::before,
 .step-img-box::after {
   content: "";
   display: block;
- 
-  position:absolute;
+
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -341,20 +335,19 @@ margin-bottom: 2rem;
   padding-bottom: 60%;
   background-color: #fdf2e9;
   z-index: -2;
-
 }
 
 .step-img-box::after {
-width: 45%;
-padding-bottom: 45%;
-background-color: #fae5d3;
-z-index: -1;
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
 }
 .step-img {
-width: 35%;
+  width: 35%;
 }
 .howitwork-container {
-text-align: center;
+  text-align: center;
 }
 
 .step-description {
@@ -362,4 +355,77 @@ text-align: center;
   line-height: 1.8;
   margin-bottom: 2.97rem;
 }
-/****************?
+
+/************************/
+/** Meals ***/
+.section-meals {
+  padding: 0 0 3.5rem 0;
+}
+
+.meal-title {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 2.1rem;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.meal-attribute {
+  font-size: 1rem;
+  align-items: center;
+  display: flex;
+  gap: 0.9rem;
+}
+
+.meal-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  color: #e67e22;
+}
+
+strong {
+  font-size: 500;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+}
+
+.meal-tags {
+  margin-bottom: 0.8rem;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.meal {
+  box-shadow: 0 1.2rem 2.4rem rgb(0 0 0 / 10%);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.meal-content {
+  padding: 1.3rem 2.2rem 2.2rem 2.2rem;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffb43b;
+}
