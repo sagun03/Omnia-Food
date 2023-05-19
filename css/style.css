@@ -359,7 +359,7 @@ body {
 /************************/
 /** Meals ***/
 .section-meals {
-  padding: 0 0 3.5rem 0;
+  padding: 1.6rem 0;
 }
 
 .meal-title {
@@ -428,4 +428,46 @@ strong {
 
 .tag--paleo {
   background-color: #ffb43b;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.list-item {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.list-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3.8rem !important;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
