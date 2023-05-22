@@ -35,12 +35,16 @@ Greys: #555
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  overflow-x: hidden;
+  /* scroll-behavior: smooth; */
+}
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /************************/
@@ -67,7 +71,7 @@ body {
 
 .sub-heading {
   display: block;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #cf711f;
   text-transform: uppercase;
@@ -169,6 +173,7 @@ body {
 .main-nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 3.2rem;
 }
 
@@ -176,8 +181,8 @@ body {
 .main-nav-link:visited {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
-  font-size: 0.89rem;
+  font-weight: 700;
+  font-size: 1rem;
   transition: all 0.3s;
 }
 
@@ -215,6 +220,7 @@ body {
 
   height: 5.1rem;
   padding: 0 3.02rem;
+  position: relative;
 }
 
 /************************/
@@ -226,7 +232,6 @@ body {
   background-color: #fdf2e9;
   padding: 2.92rem 0;
 }
-
 .hero {
   max-width: 81.2rem;
   display: grid;
@@ -315,7 +320,7 @@ body {
 /* How it works */
 
 .section-how {
-  padding: 6.14rem 0;
+  padding: 7.14rem 0;
 }
 .step-number {
   font-size: 5.5rem;
@@ -372,7 +377,7 @@ body {
 /************************/
 /** Meals ***/
 .section-meals {
-  padding: 1.6rem 0;
+  padding: 5rem 0;
 }
 
 .meal-title {
@@ -543,8 +548,7 @@ strong {
   overflow: hidden;
 }
 
-.gallery-item,
-img {
+.gallery-item > img {
   width: 13.5rem;
   transition: all 0.4s;
 }
@@ -631,10 +635,12 @@ img {
   color: #333;
   font-weight: 700;
   margin-bottom: 1.2rem;
+  text-align: center;
 }
 .feature-text {
   font-size: 1rem;
   line-height: 1.4;
+  text-align: center;
 }
 
 .plan-details {
@@ -646,7 +652,7 @@ img {
 
 .section-cta {
   /* padding: 9.6rem 0 12.8rem 0; */
-  padding: 3.8rem 0 10.8rem;
+  padding: 3.8rem 0 8.8rem;
 }
 
 .cta {
@@ -716,7 +722,7 @@ img {
 }
 
 .footer {
-  padding: 8.8rem 0;
+  padding: 6.8rem 0;
   border-top: 1px solid #eee;
 }
 .grid--footer {
@@ -768,4 +774,62 @@ img {
 }
 .address {
   margin-bottom: 1.8rem;
+}
+
+.feature {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: #333;
+}
+
+.icon-inner,
+.ionicon,
+svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+:host .ionicon {
+  stroke: currentcolor;
+}
+.ionicon-stroke-width {
+  stroke-width: var(--ionicon-stroke-width, 32px);
+}
+.ionicon-fill-none {
+  fill: none;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  height: 4rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 0.3);
+}
+
+.sticky .section-hero {
+  margin-top: 5.1rem;
 }
